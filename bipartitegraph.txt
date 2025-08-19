@@ -1,0 +1,50 @@
+\documentclass[10pt]{article}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{bfffqq}{rgb}{0.7490196078431373,1,0}
+\definecolor{qqttqq}{rgb}{0,0.2,0}
+\definecolor{qqwwtt}{rgb}{0,0.4,0.2}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\definecolor{ffqqqq}{rgb}{1,0,0}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\begin{axis}[
+x=1cm,y=1cm,
+axis lines=middle,
+ymajorgrids=true,
+xmajorgrids=true,
+xmin=1.17983494125029,
+xmax=10.867023364900875,
+ymin=-2.6520586318055392,
+ymax=4.413625839800186,
+xtick={2,3,...,10},
+ytick={-2,-1,...,4},]
+\clip(1.17983494125029,-2.6520586318055392) rectangle (10.867023364900875,4.413625839800186);
+\draw [line width=2pt,color=ffqqqq] (2,3)-- (2,1);
+\draw [line width=2pt,color=ffqqqq] (2,3)-- (4,1);
+\draw [line width=2pt,color=ffqqqq] (2,3)-- (6,1);
+\draw [line width=2pt,color=ffqqqq] (2,3)-- (8,1);
+\draw [line width=2pt,color=qqqqff] (4,3)-- (2,1);
+\draw [line width=2pt,color=qqqqff] (4,3)-- (6,1);
+\draw [line width=2pt,color=qqqqff] (4,3)-- (8,1);
+\draw [line width=2pt,color=qqwwtt] (6,3)-- (4,1);
+\draw [line width=2pt,color=qqttqq] (6,3)-- (8,1);
+\draw [line width=2pt,color=bfffqq] (8,3)-- (6,1);
+\draw [line width=2pt,color=bfffqq] (8,3)-- (4,1);
+\draw [line width=2pt,color=bfffqq] (8,3)-- (2,1);
+\begin{scriptsize}
+\draw [fill=black] (2,3) circle (2.5pt);
+\draw [fill=black] (4,3) circle (2.5pt);
+\draw [fill=black] (6,3) circle (2.5pt);
+\draw [fill=black] (8,3) circle (2.5pt);
+\draw [fill=black] (2,1) circle (2.5pt);
+\draw [fill=black] (4,1) circle (2.5pt);
+\draw [fill=black] (6,1) circle (2.5pt);
+\draw [fill=black] (8,1) circle (2.5pt);
+\end{scriptsize}
+\end{axis}
+\end{tikzpicture}
+\end{document}
